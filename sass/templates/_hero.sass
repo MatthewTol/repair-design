@@ -7,12 +7,40 @@
   background-size: cover
   color: $white
   padding-top: 100px
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: flex-start
+  &__content
+    max-width: 670px
+  &__text
+    font-size: 22px;
+    line-height: 30px;
+    max-width: 500px
+  &__button
+    margin-right: 20px
+    padding: 19px 25px
   &__instagram
     left: 0
     top: 0
     position: absolute
     max-width: 80px
     height: 100% 
+  &__scroll-down
+    position: absolute
+    left: 0
+    bottom: 0
+    background-color: $dark
+    min-width: 247px
+    min-height: 97px
+    display: flex
+    justify-content: center
+    align-items: center
+    text-transform: uppercase
+    text-decoration: none
+    color: $white
+    font-family: 'Yeseva One Regular', sanf-serif
+    font-size: 12px
 .instagram
   display: flex
   justify-content: center
@@ -25,3 +53,9 @@
     transform: rotate(90deg)
 .title
   margin: 0
+  font-size: 40px;
+  line-height: 53px;
+  text-transform: uppercase
+  font-family: 'Yeseva One Regular', sanf-serif
+  &--primary
+    color: $primary

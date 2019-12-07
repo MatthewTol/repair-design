@@ -12,6 +12,13 @@
   font-style: normal;
   font-display: wrap; }
 
+@font-face {
+  font-family: 'Yeseva One Regular';
+  src: url("../fonts/yeseva/YesevaOne-Regular.woff") format("woff"), url("../fonts/yeseva/YesevaOne-Regular.woff2") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: wrap; }
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -319,7 +326,8 @@ template {
 
 .container {
   max-width: 1256px;
-  margin: auto; }
+  margin: auto;
+  width: 85%; }
 
 .button {
   padding: 13px 20px;
@@ -329,6 +337,10 @@ template {
   font-size: 13px; }
   .button--primary {
     background-color: #e3b873;
+    color: #fff; }
+  .button--outline {
+    border: 1px solid #fff;
+    background: transparent;
     color: #fff; }
 
 .header {
@@ -369,13 +381,41 @@ template {
   background-position: center;
   background-size: cover;
   color: #fff;
-  padding-top: 100px; }
+  padding-top: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start; }
+  .hero__content {
+    max-width: 670px; }
+  .hero__text {
+    font-size: 22px;
+    line-height: 30px;
+    max-width: 500px; }
+  .hero__button {
+    margin-right: 20px;
+    padding: 19px 25px; }
   .hero__instagram {
     left: 0;
     top: 0;
     position: absolute;
     max-width: 80px;
     height: 100%; }
+  .hero__scroll-down {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background-color: #131313;
+    min-width: 247px;
+    min-height: 97px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #fff;
+    font-family: 'Yeseva One Regular', sanf-serif;
+    font-size: 12px; }
 
 .instagram {
   display: flex;
@@ -389,7 +429,13 @@ template {
     transform: rotate(90deg); }
 
 .title {
-  margin: 0; }
+  margin: 0;
+  font-size: 40px;
+  line-height: 53px;
+  text-transform: uppercase;
+  font-family: 'Yeseva One Regular', sanf-serif; }
+  .title--primary {
+    color: #e3b873; }
 
 *,
 *:before,
