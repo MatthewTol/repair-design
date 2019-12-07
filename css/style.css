@@ -391,6 +391,11 @@ template {
 .title {
   margin: 0; }
 
+*,
+*:before,
+*:after {
+  box-sizing: border-box; }
+
 body {
   font-size: 14px;
   font-family: 'Futura Book', sans-serif; }
