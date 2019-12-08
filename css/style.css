@@ -335,9 +335,15 @@ template {
   border-radius: 2px;
   text-transform: uppercase;
   font-size: 13px; }
+  .button:hover {
+    cursor: pointer; }
   .button--primary {
     background-color: #e3b873;
-    color: #fff; }
+    color: #fff;
+    box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.2);
+    transiton: box-shadow .3s; }
+    .button--primary:hover {
+      box-shadow: none; }
   .button--outline {
     border: 1px solid #fff;
     background: transparent;
@@ -365,7 +371,10 @@ template {
   color: #fff;
   text-decoration: none;
   text-transform: uppercase;
-  margin-right: 40px; }
+  margin-right: 40px;
+  transition: color .1s; }
+  .nav__item:hover {
+    color: #e3b873; }
 
 .phone {
   color: #e3b873; }
@@ -386,8 +395,15 @@ template {
   flex-direction: column;
   justify-content: center;
   align-items: flex-start; }
+  .hero::before {
+    content: "";
+    position: absolute;
+    background: rgba(19, 19, 19, 0.7);
+    width: 100%;
+    height: 100%; }
   .hero__content {
-    max-width: 670px; }
+    max-width: 670px;
+    position: relative; }
   .hero__text {
     font-size: 22px;
     line-height: 30px;
@@ -416,6 +432,16 @@ template {
     color: #fff;
     font-family: 'Yeseva One Regular', sanf-serif;
     font-size: 12px; }
+    .hero__scroll-down::after {
+      content: "";
+      background-image: url(../img/arrow.svg);
+      background-repeat: no-repeat;
+      background-position: center;
+      height: 30px;
+      width: 30px;
+      border: 2px solid #e3b873;
+      border-radius: 50%;
+      margin-left: 20px; }
 
 .instagram {
   display: flex;
@@ -423,10 +449,19 @@ template {
   align-items: center;
   background-color: #131313; }
   .instagram__link {
+    display: flex;
     text-transform: uppercase;
+    align-items: center;
     color: #e3b873;
     text-decoration: none;
-    transform: rotate(90deg); }
+    transform: rotate(90deg);
+    line-height: .8; }
+    .instagram__link::after {
+      content: "";
+      width: 50px;
+      height: 1px;
+      background-color: #e3b873;
+      margin-left: 8px; }
 
 .title {
   margin: 0;
