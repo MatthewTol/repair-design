@@ -390,6 +390,22 @@ img {
     background: transparent;
     color: #fff; }
 
+.label {
+  font-size: 1.07rem;
+  color: rgba(255, 255, 255, 0.5); }
+
+.input {
+  font-weight: 500;
+  font-size: 1.28rem;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  color: #fff;
+  padding: 10px 0px; }
+  .input::placeholder {
+    color: #fff;
+    font-size: 1.28rem; }
+
 .header {
   background-color: #131313;
   padding: 1.71rem 0rem;
@@ -611,6 +627,76 @@ img {
   .section-title__description {
     max-width: 21.85rem;
     font-size: 1.07rem; } }
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 150;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(19, 19, 19, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .modal__dialog {
+    position: relative;
+    background-color: #131313;
+    max-width: 36.14rem;
+    color: #fff;
+    padding: 2.35rem 5.14rem 1.92rem; }
+  .modal__close {
+    position: absolute;
+    width: 28px;
+    height: 28px;
+    background: #131313 url(../img/close.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    top: 0;
+    right: 0;
+    border: none;
+    margin: 12px; }
+  .modal__title {
+    font-size: 1.35rem;
+    line-height: 1.85rem;
+    text-align: center;
+    font-family: 'Yeseva One Regular';
+    max-width: 25.85rem;
+    margin: auto;
+    margin-bottom: 2.42rem; }
+  .modal__form {
+    display: flex;
+    flex-direction: column; }
+  .modal__input {
+    margin-bottom: 3.42rem; }
+    .modal__input:last-of-type {
+      margin-bottom: 1.28rem; }
+  .modal__privacy {
+    margin-bottom: 2.78rem; }
+    .modal__privacy-input {
+      opacity: 0;
+      visibility: hidden; }
+      .modal__privacy-input:checked + .modal__privacy-label::before {
+        background: #e3b873 url(../img/check.svg);
+        background-repeat: no-repeat;
+        background-position: center; }
+    .modal__privacy-label {
+      display: flex;
+      align-items: center; }
+      .modal__privacy-label:before {
+        content: '';
+        width: 18px;
+        height: 18px;
+        border: 1px solid #e3b873;
+        border-radius: 2px;
+        margin-right: 7px; }
+  .modal__button {
+    width: 15.21rem;
+    min-height: 3.64rem;
+    align-self: flex-end; }
 
 @media screen and (max-width: 1300px) {
   html {

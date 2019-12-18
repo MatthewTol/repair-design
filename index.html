@@ -312,6 +312,31 @@
     <!-- /.section design -->
   </main>
   <!-- /.main -->
+  <div class="modal">
+    <div class="modal__dialog">
+      <button class="modal__close"></button> <!-- /.modal__close -->
+      <div class="modal__title">
+        Оставьте заявку и наш менеджер свяжется с вами
+      </div>
+      <!-- /.modal__title -->
+      <div class="modal__form">
+        <label for="modal-name" class="label modal__label">Имя</label>
+        <input type="name" class="input modal__input" id="modal-name" placeholder="Как вас зовут:">
+        <label for="modal-phone" class="label modal__label">Телефон</label>
+        <input type="tel" class="input modal__input" id="modal-phone" placeholder="Ваш номер телефона:">
+        <label for="modal-email" class="label modal__label">Email</label>
+        <input type="email" class="input modal__input" id="modal-email" placeholder="Ваш email:">
+        <div class="modal__privacy">
+          <input type="checkbox" class="modal__privacy-input" id="modal-checkbox">
+          <label for="modal-checkbox" class="modal__privacy-label">Я соглашаюсь с обработкой данных</label>
+        </div>
+        <button class="button button--primary modal__button">отправить заявку</button>
+      </div>
+      <!-- /.modal__form -->
+    </div>
+    <!-- /.modal__dialog -->
+  </div>
+  <!-- /.modal -->
 </body>
 
 </html>
