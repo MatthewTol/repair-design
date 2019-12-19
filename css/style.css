@@ -391,7 +391,7 @@ img {
     color: #fff; }
 
 .label {
-  font-size: 1.07rem;
+  font-size: 1.2rem;
   color: rgba(255, 255, 255, 0.5); }
 
 .input {
@@ -401,10 +401,10 @@ img {
   border: none;
   border-bottom: 1px solid rgba(255, 255, 255, 0.5);
   color: #fff;
-  padding: 10px 0px; }
+  padding: 8px 0px; }
   .input::placeholder {
     color: #fff;
-    font-size: 1.28rem; }
+    font-size: 1.4rem; }
 
 .header {
   background-color: #131313;
@@ -643,10 +643,14 @@ img {
   align-items: center; }
   .modal__dialog {
     position: relative;
-    background-color: #131313;
-    max-width: 36.14rem;
+    background: #131313 url(../img/bg-lines.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 40.14rem;
+    width: 100%;
     color: #fff;
-    padding: 2.35rem 5.14rem 1.92rem; }
+    padding: 2.35rem 4rem 1.92rem; }
   .modal__close {
     position: absolute;
     width: 28px;
@@ -658,34 +662,38 @@ img {
     top: 0;
     right: 0;
     border: none;
-    margin: 12px; }
+    margin: 12px;
+    cursor: pointer; }
   .modal__title {
-    font-size: 1.35rem;
-    line-height: 1.85rem;
+    font-size: 1.5rem;
+    line-height: 2rem;
     text-align: center;
     font-family: 'Yeseva One Regular';
-    max-width: 25.85rem;
+    max-width: 27.85rem;
     margin: auto;
     margin-bottom: 2.42rem; }
   .modal__form {
     display: flex;
     flex-direction: column; }
   .modal__input {
-    margin-bottom: 3.42rem; }
+    margin-bottom: 3.6rem; }
     .modal__input:last-of-type {
-      margin-bottom: 1.28rem; }
+      margin-bottom: 0rem; }
   .modal__privacy {
-    margin-bottom: 2.78rem; }
+    margin-bottom: 3.5rem; }
     .modal__privacy-input {
       opacity: 0;
-      visibility: hidden; }
+      visibility: hidden;
+      cursor: pointer; }
       .modal__privacy-input:checked + .modal__privacy-label::before {
         background: #e3b873 url(../img/check.svg);
         background-repeat: no-repeat;
         background-position: center; }
     .modal__privacy-label {
       display: flex;
-      align-items: center; }
+      align-items: center;
+      font-size: 1.27rem;
+      cursor: pointer; }
       .modal__privacy-label:before {
         content: '';
         width: 18px;
@@ -694,8 +702,8 @@ img {
         border-radius: 2px;
         margin-right: 7px; }
   .modal__button {
-    width: 15.21rem;
-    min-height: 3.64rem;
+    padding: 20px 50px;
+    font-size: 1.1rem;
     align-self: flex-end; }
 
 @media screen and (max-width: 1300px) {
