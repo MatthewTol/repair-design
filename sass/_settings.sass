@@ -14,10 +14,28 @@ img
   padding: 60px 0px
   &-title
     text-align: center
+    &-text
+      max-width: 31.57rem
+      font-size: 1.28rem
+      line-height: 2.07rem
+    &--left
+      text-align: left
     &__heading
       font-family: 'Yeseva One Regular', cursive
       text-transform: uppercase
       font-size: 1.4rem
+      line-height: 138.6%
+      &--primary
+        color: $primary
+    &__word
+      display: flex
+      align-items: center
+      &::after
+        content: ""
+        width: 6.57rem
+        height: 2px
+        background-color: $primary
+        margin-left: 2rem
     &__description
       font-size: 1.42rem
       line-height: 1.92rem
@@ -35,3 +53,6 @@ img
         height: 2px
         margin: 0rem 0.714rem
         background-color: $primary
+  &--dark
+    background: $dark
+    color: $white
