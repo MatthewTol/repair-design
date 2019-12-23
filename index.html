@@ -7,6 +7,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Repair Design Project</title>
   <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+  <link rel="stylesheet" href="css/animate.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -14,8 +15,8 @@
   <header class="header">
     <div class="container">
       <div class="menu">
-        <div class="logo menu__logo">Repair Design Project</div>
-        <nav class="nav menu__nav">
+        <div class="logo menu__logo wow fadeInLeft">Repair Design Project</div>
+        <nav class="nav menu__nav wow fadeInDown">
           <a href="#" class="nav__item">Главная</a>
           <!-- /.nav__item -->
           <a href="#" class="nav__item">Проекты</a>
@@ -30,7 +31,7 @@
           <!-- /.nav__item -->
         </nav>
         <!-- /.nav -->
-        <div class="contacts menu_contacts">
+        <div class="contacts menu_contacts wow fadeInRight">
           <a href="+79997683299" class="phone contacts__phone">
             +7 (999) 768-32-99
           </a> <!-- /.phone contacts__phone -->
@@ -51,7 +52,7 @@
       </div>
       <!-- /.instagram hero__instagram -->
       <div class="container">
-        <div class="hero__content">
+        <div class="hero__content wow fadeInLeft">
           <h1 class="title hero__title">турецкий ремонт в&nbsp;<span class="title--primary">Ростове-на-дону</span></h1>
           <!-- /.title hero__title -->
           <p class="hero__text">Получите готовый ремонт под ключ в срок с экономией рабочего времени до 45 дней и 20% от
@@ -72,7 +73,7 @@
     <section class="section section--dark projects">
       <div class="container">
         <div class="row">
-          <div class="col-50">
+          <div class="col-50 wow fadeInLeft">
             <div class="section-title section-title--left">
               <h2 class="section-title__heading section-title__heading--primary">Завершенные <span
                   class="section-title__word">проекты</span></h2>
@@ -205,7 +206,7 @@
             </div>
           </div>
           <!-- /.col-50 -->
-          <div class="col-50">
+          <div class="col-50 wow fadeInRight">
             <div class="swiper-container">
               <!-- Additional required wrapper -->
               <div class="swiper-wrapper swiper-no-swiping">
@@ -225,17 +226,46 @@
 
     <section class="section control">
       <div class="container">
-        <div class="section-title">
+        <div class="section-title control__section-title wow fadeInUp">
           <h2 class="section-title__heading">онлайн контроль</h2>
           <div class="section-title__image"><img src="img/camera.svg" alt="camera"></div>
         </div>
+        <div class="video control__video wow pulse">
+          <img src="img/video-play.svg" alt="Видео" class="video__play">
+        </div>
+        <!-- /.video controll_video -->
+
+        <div class="control__text">
+          На каждом объекте установлена ​​камера, которая транслирует ход работы на часах. В любой
+          момент вы можете зайти на наш сайт и следить за ходом работы в вашей квартире. Посмотрите прямую трансляцию с
+          одного из наших объектов! Оставьте заявку ниже чтобы получить ссылку на трансляцию.
+        </div>
+        <!-- /.control__text -->
+
+        <form class="control__form">
+          <div class="control__input-group">
+            <label for="control-name" class="label control__label">Имя</label>
+            <input type="name" class="input input--dark control__input" id="control-name" placeholder="Как вас зовут:">
+          </div>
+          <div class="control__input-group">
+            <label for="control-phone" class="label control__label">Телефон</label>
+            <input type="tel" class="input input--dark control__input" id="control-phone" placeholder="Ваш номер телефона:">
+          </div>
+          <button class="button button--primary control__button">отправить</button>
+          <div class="control__privacy">
+            <input type="checkbox" class="control__privacy-input" id="control-checkbox">
+            <label for="control-checkbox" class="control__privacy-label">Я соглашаюсь с обработкой данных</label>
+          </div>
+        </form>
+
       </div>
       <!-- /.container -->
     </section>
     <!-- /.section control -->
-    <section class="section types">
+
+    <section class="section types wow fadeInDown">
       <div class="container">
-        <div class="section-title types__section-title">
+        <div class="section-title types__section-title wow fadeInDown">
           <h2 class="section-title__heading">Виды ремонта</h2>
           <div class="section-title__image"><img src="img/tools.svg" alt="repair"></div>
         </div>
@@ -346,9 +376,9 @@
     </section>
     <!-- /.section types -->
 
-    <section class="section design">
+    <section data-wow-delay='1s' class="section design wow fadeInDown">
       <div class="container">
-        <div class="section-title design__section-title">
+        <div class="section-title design__section-title wow fadeInDown">
           <h2 class="section-title__heading">Дизайн проект</h2>
           <div class="section-title__image"><img src="img/design.svg" alt="Дизайн проект"></div>
           <p class="section-title__description">Дизайн-проект не только помогает сделать ремонт вашей квартиры более
@@ -474,19 +504,19 @@
         Оставьте заявку и наш менеджер свяжется с вами
       </div>
       <!-- /.modal__title -->
-      <div class="modal__form">
-        <label for="modal-name" class="label modal__label">Имя</label>
-        <input type="name" class="input modal__input" id="modal-name" placeholder="Как вас зовут:">
-        <label for="modal-phone" class="label modal__label">Телефон</label>
-        <input type="tel" class="input modal__input" id="modal-phone" placeholder="Ваш номер телефона:">
-        <label for="modal-email" class="label modal__label">Email</label>
-        <input type="email" class="input modal__input" id="modal-email" placeholder="Ваш email:">
+      <form class="modal__form">
+        <label for="modal-name" class="label label--white modal__label">Имя</label>
+        <input type="name" class="input input--white modal__input" id="modal-name" placeholder="Как вас зовут:">
+        <label for="modal-phone" class="label label--white modal__label">Телефон</label>
+        <input type="tel" class="input input--white modal__input" id="modal-phone" placeholder="Ваш номер телефона:">
+        <label for="modal-email" class="label label--white modal__label">Email</label>
+        <input type="email" class="input input--white modal__input" id="modal-email" placeholder="Ваш email:">
         <div class="modal__privacy">
           <input type="checkbox" class="modal__privacy-input" id="modal-checkbox">
           <label for="modal-checkbox" class="modal__privacy-label">Я соглашаюсь с обработкой данных</label>
         </div>
         <button class="button button--primary modal__button">отправить заявку</button>
-      </div>
+      </form>
       <!-- /.modal__form -->
     </div>
     <!-- /.modal__dialog -->
@@ -495,6 +525,7 @@
 
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
   <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+  <script src="js/wow.min.js"></script>
   <script src="js/main.js"></script>
 </body>
 

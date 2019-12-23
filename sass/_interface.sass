@@ -19,15 +19,26 @@
     color: $white
 .label
   font-size: 1.2rem
-  color: rgba($white, 0.5)
+  color: rgba($dark, 0.5)
+  &--white
+    color: rgba($white, 0.5)
 .input
   font-weight: 500
   font-size: 1.28rem
   background: transparent
   border: none
-  border-bottom: 1px solid rgba($white, 0.5)
-  color: $white
+
   padding: 8px 0px
   &::placeholder
     color: $white
     font-size: 1.4rem
+  &--white
+    border-bottom: 1px solid rgba($white, 0.5)
+    color: $white
+    &::placeholder
+      color: $white
+  &--dark
+    border-bottom: 1px solid rgba($dark, 0.5)
+    color: $dark
+    &::placeholder
+      color: $dark

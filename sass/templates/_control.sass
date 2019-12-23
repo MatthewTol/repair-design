@@ -1,0 +1,86 @@
+.control
+  &__video
+    max-width: 58.35rem
+    min-height: 31rem
+    background: url(../img/video-mask.jpg)
+    background-position: center
+    background-repeat: no-repeat
+    background-size: cover
+    position: relative
+    display: flex
+    justify-content: center
+    align-items: center
+    margin: auto
+    box-shadow: 0px 20px 50px rgba(0, 0, 0, 0.15)
+    &::before
+      content: ''
+      width: 100%
+      height: 100%
+      position: absolute
+      background: rgba($dark, 0.8)
+  &__section
+    &-title
+      margin-bottom: 2.21rem
+      margin-top: -28rem
+      color: $white
+  &__text
+    max-width: 39.78rem
+    font-size: 1.42rem
+    line-height: 2.42rem
+    text-align: center
+    margin: auto
+    margin-bottom: 4.28rem
+    &::before
+      content: ""
+      width: 55px
+      height: 2px
+      border-radius: 30px
+      background: $primary
+      display: block
+      margin: auto
+      margin-top: 4.42rem
+      margin-bottom: 2.5rem
+  &__form
+    display: flex
+    max-width: 55rem
+    justify-content: space-between
+    flex-wrap: wrap
+    margin: auto
+  &__input
+    &-group
+      flex-basis: 30%
+      display: flex
+      flex-direction: column
+  &__privacy
+    flex-basis: 100%
+    margin-bottom: 3.5rem
+    margin-top: 2.35rem
+    display: flex
+    justify-content: center
+    &-input
+      opacity: 0
+      visibility: hidden
+      cursor: pointer
+      &:checked +
+        .control__privacy-label
+          &::before
+            background: $primary url(../img/check.svg)
+            background-repeat: no-repeat
+            background-position: center
+    &-label
+      display: flex
+      align-items: center
+      font-size: 1.27rem
+      cursor: pointer
+      &:before
+        content: ''
+        width: 18px
+        height: 18px
+        border: 1px solid $primary
+        border-radius: 2px
+        margin-right: 7px
+  &__button
+    padding: 1.5rem 5rem
+.video
+  &__play
+    position: relative
