@@ -249,7 +249,8 @@
           </div>
           <div class="control__input-group">
             <label for="control-phone" class="label control__label">Телефон</label>
-            <input type="tel" class="input input--dark control__input" id="control-phone" placeholder="Ваш номер телефона:">
+            <input type="tel" class="input input--dark control__input" id="control-phone"
+              placeholder="Ваш номер телефона:">
           </div>
           <button class="button button--primary control__button">отправить</button>
           <div class="control__privacy">
@@ -376,7 +377,7 @@
     </section>
     <!-- /.section types -->
 
-    <section data-wow-delay='1s' class="section design wow fadeInDown">
+    <section data-wow-delay='0,5s' class="section design wow fadeInDown">
       <div class="container">
         <div class="section-title design__section-title wow fadeInDown">
           <h2 class="section-title__heading">Дизайн проект</h2>
@@ -497,6 +498,67 @@
     <!-- /.section design -->
   </main>
   <!-- /.main -->
+  <footer class="footer section section--dark">
+    <div class="container">
+      <div class="footer-wrap wow fadeInDown">
+        <h3 class="footer__title">Остались вопросы?</h3>
+        <form class="footer__form">
+          <div class="footer__form-group">
+            <label for="footer-name" class="label label--white footer__label">Имя</label>
+            <input type="name" class="input input--white footer__input" id="footer-name" placeholder="Как вас зовут:">
+          </div>
+          <div class="footer__form-group">
+            <label for="footer-phone" class="label label--white footer__label">Телефон</label>
+            <input type="tel" class="input input--white footer__input" id="footer-phone"
+              placeholder="Ваш номер телефона:">
+          </div>
+          <div class="footer__form-group footer__form-group--full-width">
+            <label for="footer-question" class="label label--white footer__label">Вопрос</label>
+            <input type="text" class="input input--white footer__input" id="footer-question"
+              placeholder="Я хочу спросить">
+          </div>
+          <div class="footer__privacy">
+            <input type="checkbox" class="footer__privacy-input" id="footer-checkbox">
+            <label for="footer-checkbox" class="footer__privacy-label">Я соглашаюсь с обработкой данных</label>
+          </div>
+          <button class="button button--primary footer__button">отправить</button>
+        </form>
+      </div>
+      <!-- /.footer__wrap -->
+    </div>
+    <div class="footer__menu">
+      <div class="container">
+        <div class="menu footer__menu-menu">
+          <div class="logo menu__logo wow fadeInLeft">Repair Design Project</div>
+          <nav class="nav menu__nav wow fadeInDown">
+            <a href="#" class="nav__item">Главная</a>
+            <!-- /.nav__item -->
+            <a href="#" class="nav__item">Проекты</a>
+            <!-- /.nav__item -->
+            <a href="#" class="nav__item">Замер</a>
+            <!-- /.nav__item -->
+            <a href="#" class="nav__item">Команда</a>
+            <!-- /.nav__item -->
+            <a href="#" class="nav__item">Отзывы</a>
+            <!-- /.nav__item -->
+            <a href="#" class="nav__item">Контакты</a>
+            <!-- /.nav__item -->
+          </nav>
+          <!-- /.nav -->
+          <div class="contacts menu_contacts wow fadeInRight">
+            <a href="+79997683299" class="phone contacts__phone">
+              +7 (999) 768-32-99
+            </a> <!-- /.phone contacts__phone -->
+            <button class="button contacts__button button--primary" data-toggle='modal'>
+              Заказать звонок
+            </button> <!-- /.button contacts__button button--primary -->
+          </div>
+          <!-- /.contacts menu_contacts -->
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- /.footer section section--dark -->
   <div class="modal">
     <div class="modal__dialog">
       <button class="modal__close"></button> <!-- /.modal__close -->

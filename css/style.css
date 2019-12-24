@@ -746,6 +746,9 @@ img {
   .types .card__text {
     margin-left: 0; } }
 
+.design {
+  margin-bottom: 20rem; }
+
 .row {
   align-items: flex-start; }
 
@@ -897,6 +900,75 @@ img {
 .swiper-container-horizontal > .swiper-pagination-bullets {
   width: auto;
   bottom: 0; }
+
+.footer {
+  background: #131313 url(../img/footer-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding-bottom: 0; }
+  .footer-wrap {
+    background: #181818 url(../img/bg-lines.svg);
+    max-width: 63.07rem;
+    margin: auto;
+    padding: 2.45rem 12.96rem;
+    margin-top: -19.71rem; }
+  .footer__title {
+    font-family: 'Yeseva One Regular';
+    text-align: center;
+    font-size: 1.42rem;
+    margin-bottom: 3.28rem;
+    text-transform: uppercase;
+    font-weight: normal;
+    font-style: normal; }
+  .footer__form {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; }
+    .footer__form-group {
+      display: flex;
+      flex-direction: column;
+      flex-basis: 45%; }
+      .footer__form-group--full-width {
+        flex-basis: 100%; }
+  .footer__input {
+    margin-bottom: 3.5rem; }
+    .footer__input:last-of-type {
+      margin-bottom: 2rem; }
+  .footer__privacy {
+    flex-basis: 100%;
+    margin-bottom: 3.5rem;
+    margin-top: 2.35rem;
+    display: flex;
+    justify-content: center; }
+    .footer__privacy-input {
+      opacity: 0;
+      visibility: hidden;
+      cursor: pointer; }
+      .footer__privacy-input:checked + .footer__privacy-label::before {
+        background: #e3b873 url(../img/check.svg);
+        background-repeat: no-repeat;
+        background-position: center; }
+    .footer__privacy-label {
+      display: flex;
+      align-items: center;
+      font-size: 1.27rem;
+      cursor: pointer; }
+      .footer__privacy-label:before {
+        content: '';
+        width: 18px;
+        height: 18px;
+        border: 1px solid #e3b873;
+        border-radius: 2px;
+        margin-right: 7px; }
+  .footer__button {
+    margin: auto;
+    padding: 1.4rem 4rem; }
+  .footer__menu {
+    background: #131313; }
+    .footer__menu-menu {
+      padding: 3.5rem 0rem;
+      margin-top: 4.71rem; }
 
 @media screen and (max-width: 1300px) {
   html {
